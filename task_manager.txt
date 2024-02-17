@@ -1,0 +1,348 @@
+# Pseudocode for the Task Manager program in task_manager.py
+# Pseudocode for an external file handler class which is used in Task Manager is at the bottom of this txt file
+
+
+# Assign the imported File Handler class to a variable
+# Specify the date time string format
+# Assign the imported datetime method to a variable
+# Add with open statement to write a user.txt file if it doesn't already exist and include the credentials for Administrator
+# Create an empty dictionary to contain the username and passwords
+# Create a function and include the imported clear method to clear the console
+# Clear the console when the user first runs the program
+# Print a welcome statement to the user
+
+# ===== Login functionality =====
+# Add a boolean statement for logged in and set to False
+# Add while loop to run while not logged in
+# Read in the user.txt file and split the data by one line break and assign this to a variable
+# Loop through the user data and split the columns on each line
+# Assign the usernames and passwords from column 0 and 1 to the username_password dictionary
+# Add an input function to request a username and apply the lower method
+# Set the username_entered boolean to True
+# If the given username is not in the dictionary
+# Print a message to show that the username isn't in the dictionary and continue with the loop
+# Else add while loop to run while the username has been entered
+# Add an input function to request a password
+# Apply the imported hash method to the password to make the password hashed
+# If the hashed password doesn't match the hashed password stored in the dictionary
+# Print a message to show that the password is incorrect and continue the loop
+# Else print a message to show that the login was successful 
+# Set the boolean statement logged_in to True
+# Break out of the loop
+
+# ===== Registration functionality =====
+# Define a function to include registration functionality
+# Add an input function to request a new username
+# If there are any spaces in the username
+# Print a message to show that there shouldn't be any spaces in the username and recur the function
+# If there are any semi colons in the username
+# Print a message to show that there shouldn't be any spaces in the username and recur the function
+# If the length of the username is less than 8 characters
+# Print a message to show that the username should be at least 8 characters long and recur the function
+# If the username with the lower method applied exists in the username_password dictionary
+# Print a message to show that the username has already been taken and recur the function
+# Else add a while loop to run while True
+# Apply the lower method to the username
+# Add an input function to request a password
+# If there are any spaces in the password
+# Print a message to show that there shouldn't be any spaces in the password and continue the loop
+# If there are any semi colons in the password
+# Print a message to show that there shouldn't be any semi colons in the password and continue the loop
+# If the length of the password is less than 8 characters 
+# Print a message to show that the password must be at least 8 characters long and continue the loop
+# Add while loop to run while True
+# Add an input function to request confirmation of password
+# If the password is the same as the confirmed password
+# Apply the hash method to the password
+# Assign the username and hashed password to the username_password dictionary
+# Return the username_password dictionary
+# Else print a statement to show that the passwords don't match and continue the loop
+
+# ===== Add a task functionality ======
+# Define a function to include task adding functionality
+# Add an empty list to include the list of tasks
+# Use the read method to read the user.txt file, assign this to a variable and split the file contents by one line break
+# Loop through the user data
+# Split each line into columns split by semi colons
+# Add an input function to request the username of whom the task is assigned to
+# If the username is not in the username_password dictionary
+# Print a statement to show that the user does not exist and recur the function
+# Else add an input function to request for a task title
+# Add an input function to request for a task description
+# Add while loop to run while True
+# Add try statement
+# Add input function to request a task due date
+# Use the strptime method to format the due date and assign this to a variable and break out of the loop
+# Add except statement
+# Print a message to show if an invalid datetime format is given and continue with the loop
+# Create a dictionary to hold the new task information
+# Append the new task to task_list
+# Add a with open statement to open tasks.txt in append mode or create it if it doesn't exist
+# Create an empty list to contain the tasks to be wrote to the file
+# Loop through the task list
+# Assign the task username to a list
+# Assign the task title to a list
+# Assign the task description to a list
+# Assign the task due date to a list
+# Assign the task assigned date to a list
+# Assign Yes or No to a list to show whether task is complete
+# Use the join method to join all elements of the list together with a semi colon and append to task_list_to_write
+# Use the join method to write to the tasks.txt file separared by one line break
+# Write one line break to the tasks.txt file
+# Print a message to show that the task has been successfully added
+# Call the main function to show the menu
+                
+# ===== Function to view all tasks =====
+# Define a function and pass in the tasks variable which contains all current tasks
+# Print a message to show a title of 'Tasks'
+# Using enumerate, loop through all tasks
+# Print all tasks and their corresponding numbers
+                
+# ===== Function to change the due date of a task =====
+# Define a function and pass in the variables task and tasks
+# Add try statement
+# Add input function to request the task due date and cast this into a string
+# Add except statement and include a ValueError handler
+# Print a message to show if the incorrect date format has been entered and recur the function
+# Call the update_tasks function and pass in task and tasks if the incorrect date format has been entered
+
+# ===== Function to change completion status =====
+# Define a function and pass in task and tasks
+# Add an input function to request either a 'y' to mark the task as complete or 'n' to go back and cast this into a string
+# If the users input with the lower method applied is 'y'
+# Assign the task's completed value to 'Yes'
+# Call the update tasks function and pass in tasks and task
+# If the users input with the lower method applied is 'n'
+# Call the view_mine function
+# Else print a statement to show that the users choice has not been recognised
+# Recur the function
+    
+# ===== Function to change username =====
+# Define a function and pass in task, tasks and user_data
+# Create an empty list to contain the total users
+# Loop through the user data
+# Split each line of user data into columns split with semi colons
+# Append column 0 to the total users list to append the username of each user
+# Add an input function to request a new user, cast this into a string and assign it to the whom the task is assigned to
+# Add while loop to run while the assigned to user exists in the total_users list
+# Call the update_tasks function and pass in tasks and task
+# Print a statement if the user doesn't exist in the total_users list
+# Recur the function
+
+ # ===== Function to update tasks =====
+# If the chosen tasks database row is greater than or equal to 1
+# Loop through the tasks and reduce the task index by 1 and assign this to a variable
+# If the chosen tasks database row is less than 1
+# Loop through the tasks and assign the task at the specified database row to a variable
+# Add try statement
+# Use a with open statement to open the tasks.txt file read and write mode and open a temp.txt file in write mode
+# Loop through the tasks file and enumerate each line
+# If the database row in tasks file is equal to the database row value in fetched_rows
+# Remove the corresponding row from fetched_rows
+# Pop the relevant task out of tasks, slice the remaining tasks from the 2nd item and join with a semi colon separating each value, print this to the temporary file
+# Else use the strip method on the task line and print to the temporary file
+# Add except statement to include a filenotfound error handler
+# Print a message to show that the page is currently down for maintenance
+# Add a system exit method to exit the program if the error occurs
+# Use the remove method to remove the tasks.txt file
+# Use the rename method to rename the temp.txt file to tasks.txt
+# Print a message to show that the changes have been saved
+# Call the main function to return to the main menu
+
+# ===== Function to display the users tasks only =====
+# Create an empty list to contain tasks
+# Set a variable to be used for iteration to 0
+# Use the read method to split lines from tasks.txt and assign to a variable
+# Print a title of 'Your tasks:'
+# Use enumerate and loop through each of the task lines
+# Split each line by a semi colon and assign each split value to assigned_to, along with the rest of the values in the same row
+# If the logged in user is equal to the user that the task is assigned to
+# Use the zip method to assign the values from tasks.txt file to a dictionary with corresponding keys
+# Append the dictionary to a list
+# Increase the iteration variable by 1 each time the loop runs
+# Print the users task in a readable format
+# If the length of tasks is equal to 0
+# Print a message to show that the user has no tasks pending
+# Call the main function to display the main menu
+# Else add try statement
+# Add an input function to request a choice of task from the user and cast this into an integer
+# Add except statement to include value error handler
+# Print a message to the user if a value error occurs
+# Recur the function
+# If the users choice is '-1'
+# Call the main function to display the main menu
+# If the task choice is equal to 0 or the task choice is greater than the length of tasks
+# Print a message to show that the user has entered an incorrect number
+# Recur the function
+# Reduce the users choice task by 1 for it to match with the task list items index and assign this to variable
+# If the task is complete
+# Print a message to show that the task can't be edited because it is marked as complete
+# Recur the function
+# Add a boolean statement and state that editing is not complete by setting it to False
+# Add a while loop to run while editing is not complete
+# Add an input function to request the editing choice from the user and cast this into a string
+# Add a while loop to run while editing is not complete
+# If editing choice is 'e'
+# Add an input function to request a choice of what the user would like to edit
+# If the users choice with the lower method applied is 'u'
+# Call the change_username function and pass in task, tasks and user data
+# If the users choice with the lower method applied is 'd'
+# Call the change_due_date function and pass in task and tasks
+# If the users choice is '-1'
+# Call the main function to display the main menu
+# Else print a message to show that the users choice has not been recognised and continue the loop
+# If the users choice with the lower method applied is 'c'
+# Call the change_completion_status function and pass in task and tasks
+# If the users choice is '-1'
+# Call the main function to display the main menu
+# Else print a message to show that the users choice has not been recognised and break out of the loop
+
+# ===== Parent class to generate reports =====
+# Create a class
+# Add a constructor and pass in 'self' to represent the class's instance and pass in the list of the tasks dictionary and the lines of tasks
+# Add a class variable which takes in the value of the current date
+# Add a class variable which takes in the value of the task lines
+# Add a class variable whcih takes in the value of tasks
+                
+# ===== Class which generates the task reports =====
+# Create a class
+# Add a constructor and pass in 'self' to represent the class's instance and pass in the list of the tasks dictionary and the lines of tasks
+# Use the super init method to inherit from the Reports class
+# Define a variable to represent the count of incomplete tasks and set it to 0
+# Define a variable to represent the count of complete tasks and set it to 0
+# Define a variable to represent the count of incomplete and not due tasks and set it to 0
+# Define a variable to represent the count of incomplete and due tasks and set it to 0
+# Use the length method to find the length of tasks and assign this to a variable
+# If the tasks length is equal to 0
+# Print a message to the user to show that there are no tasks
+# Call the main function
+# Else loop through the tasks
+# Assign the task due date to a variable
+# Use the strptime method to format the date and assign this to a variable
+# If the task is not complete
+# Increase the incomplete count by 1
+# If the date comes after the current date
+# Increase the incomplete and not due count by 1
+# If the date come before the current date
+# Increase the incomplete and due count by 1
+# If the task is complete
+# Increase the complete count by 1
+# Print the message to direct the user to the two newly created files
+# Add a with open statement to open a new file to hold the task statistics
+# Write a title to the tasks overview file
+# Write the total numbers of tasks to the tasks overview file
+# Write the percentage of incomplete tasks to the tasks overview file
+# Write the percentage of complete tasks to the tasks overview file
+# Write the total number of tasks which are incomplete and not due to the tasks overview file
+# Write the total number of tasks which are incomplete and due to the tasks overview file
+# Write the total number of complete tasks to the tasks overview file
+# Write the total number of incomplete tasks to the tasks overview file
+# Write the percentage of incomplete and not due tasks to the tasks overview file
+# Write the percentage of incomplete and overdue tasks to the tasks overview file
+
+# ===== Class which generates the User reports =====
+# Create a class
+# Add a constructor and pass in 'self' to represent the class's instance and pass in the list of the tasks dictionary, user data and the lines of tasks
+# Use the super init method to inherit from the Reports class
+# Use the length method to find the number of tasks and assign this to a variable
+# Create an empty dictionary to hold the user statistics
+# Create an empty list which will hold the list of users
+# Create an empty dictionary to include the percentage of allocated tasks
+# Create an empty dictionary to include the percentage of complete tasks
+# Create an empty dictionary to include the percentage of incomplete tasks
+# Create an empty dictionary to include the number of incomplete and overdue tasks
+# Loop through the user data
+# Use the split method to split the user data by a semi colon
+# Append each username to a list
+# Use the length method to find the total number of users and assign the total to the dictionary
+# Assign the number of tasks to the total number of tasks in the dictionary
+# Loop through the total number of users
+# Create a dictionary for each user that is looped through
+# Loop through the tasks
+# If the user is the user that the task is assigned to
+# Add an increment of 1 to the total number of tasks for this user
+# If the task is complete
+# Add an increment of 1 to the total number of complete tasks for this user
+# If the task is not complete
+# Add an increment of 1 to the total number of tasks to be completed for this user
+# Format the task due date with datetime 
+# If the task due date takes place before the current date
+# Add an increment of 1 to the total number of tasks which are incomplete and overdue
+# Loop through the total list of users
+# If the user is in the user counter dictionary
+# Get the user total number of tasks and assign this to a dictionary
+# Get the user total number of completed tasks and assign this to a dictionary
+# Get the user total number of tasks to be completed and assign this to a dictionary
+# Get the user total number of incomplete and overdue tasks and assign this to a dictionary
+# Get the user total number of allocated tasks and assign a number to a dictionary if not None otherwise assign 0
+# Get the total number number of completed tasks and assign a number to a dictionary if not None otherwise assign 0
+# Get the total number number of incomplete tasks and assign a number to a dictionary if not None otherwise assign 0
+# If the users task list is not equal to 0, use the round method and calculate percentage of allocated tasks
+# If the users task list is not equal to 0, use the round method and calculate percentage of complete tasks
+# If the users task list is not equal to 0, use the round method and calculate percentage of incomplete tasks
+# If the users task list is not equal to 0, use the round method and calculate percentage of incomplete and overdue tasks
+# Use the with open method to open a new file to hold the user reports
+# Write a title to the user overview file
+# Write the total number of users registered with the Task Manager to the user overview file
+# Write the total numbers of tasks to the user overview file
+# Loop through the dictionary of tasks allocated percentages and write the total to the user overview file
+# Loop through the dictionary of tasks complete percentages and write the total to the user overview file
+# Loop through the dictionary of tasks incomplete percentages and write the total to the user overview file
+# Loop through the dictionary of tasks incomplete and overdue and write the total to the user overview file
+
+# ===== Function to read data from tasks.txt and user.txt files =====
+# Use the read method to open the tasks.txt file and use the split lines method to assign all task lines to a variable
+# Create an empty list to hold the tasks
+# Create a variable to iterate through a loop and assign in the value of 0
+# Using enumerate, loop through the task lines
+# Split the values on each line by a semi colon and assign these to variables
+# Using the zip method, assign the variables to keys in a dictionary to hold the task data
+# Append the task data dictionary to the empty list
+# If the boolean statement passed in is equal True, meaning va was selected
+# Call the function to display all tasks
+# Else use the read method to read the user.txt file, split each line by one line space and assign this to a variable
+# Create an instance of the task overview class and pass in the tasks and task lines
+# Create an instance of the user overview class and pass in the tasks, user data and task lines
+
+# ===== Define a function to display a main menu ====
+# Add while loop to run while True
+# Print a message to the user for the menu title
+# If the logged in user with the lower method applied is admin
+# Print the menu which is specific to the admin
+# Else print a menu which is specifc to a general user
+# Add an input function to request the menu choice
+# If the users choice with the lower method applied is 'r'
+# Call the reg_user function to register a user
+# If the users choice with the lower method applied is 'a'
+# Call the add_task function to add a task
+# If the users choice with the lower method applied is 'va'
+# Define a variable to represent that 'va' has been selected and set it to True
+# Call the read_data function and pass in the boolean variable
+# If the users choice with the lower method applied is 'vm'
+# Call the view_mine function to display only the users tasks
+# If the logged in user with the lower method applied is admin and the admin's choice is 'gr'
+# Define a variable to represent that 'va' has not been selected and set it to False
+# Call the read_data function and pass in the boolean variable
+# If the users choice with the lower method applied is 'e'
+# Print a message to the user to say thanks for using the program
+# Add the exit method to exit the program
+# Add a call to the main function
+
+# ===== File handler class in file.py =====
+# Create a class which includes functions to handle files
+# Add a function and pass in self, the file name and data with string annotations
+# Add a with open statement to open the file in write mode
+# Write the data to the file
+# Add a function and pass in self and the file name with a string annotation
+# Add a try statement
+# Add a with open statement to open the file in read and write mode
+# Return the file in read mode
+# Add an except statement to handle a file not found error
+# Print a statement to show that the page is currently down for maintenance
+# Exit the program if the file is not found
+# Add an except statement to handle an IO error
+# Exit the program if an IO error occurs
+# Add a function and pass in self, a username, hashed password and a file name, with the file name having a string annotation
+# Use a with open statement to open the file in append mode and if the file can't be located, create an entirely new file
+# Use the join method to join the username and hashed password together and write to the file
+# Print a message to show that an account has been created

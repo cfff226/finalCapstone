@@ -58,16 +58,19 @@ for the Administrator.
 * Select the triangular play button in the top right corner of the code editor to start the program
 
 * Enter your username and password
+
 ![ADMIN LOGIN!](task_manager.png/admin-login.png)
 
 
 * Enter 'R' to Register a new user
 * Enter a password
 * Confirm the password
+
 ![ADMIN REG USER!](task_manager.png/admin-reg-user.png)
 
 
 * Enter 'vm' to view the Admin's tasks only
+
 ![VIEW ADMIN'S TASKS!](task_manager.png/admin-view-m.png)
 
 
@@ -76,22 +79,24 @@ for the Administrator.
 * Enter a task title
 * Enter a task description
 * Enter a task due date
+
 ![ADD TASK!](task_manager.png/admin-add-task.png)
 
 
 * Enter 'va' to view all tasks
+
 ![VIEW ALL TASKS!](task_manager.png/admin-view-all.png)
 
 
 * Enter 'gr' to generate reports and navigate to user_overview.txt and tasks_overview.txt to view
+
 ![GENERATE REPORTS!](task_manager.png/admin-reports.png)
-
-
 ![TASK REPORT!](task_manager.png/admin-reports.png)
 ![USER REPORT!](task_manager.png/admin-user-report.png)
 
 
 * Enter 'e' to exit the program
+
 ![EXIT PROGRAM!](task_manager.png/admin-exit.png)
 
 
@@ -100,6 +105,7 @@ for the Administrator.
 * Select the triangular play button in the top right corner of the code editor to start the program
 
 * Enter your username and password
+
 ![USER LOGIN!](task_manager.png/user-login.png)
 
 
@@ -108,10 +114,12 @@ for the Administrator.
 * Enter a task title
 * Enter a task description
 * Enter a task due date
+
 ![ADD TASK!](task_manager.png/user-add-task.png)
 
 
 * Enter 'va' to view all tasks
+
 [!VIEW ALL!](task_manager.png/user-view-all.png)
 
 
@@ -119,11 +127,13 @@ for the Administrator.
 * Enter the number of the task you wish to edit
 * Enter an option of how you would like to edit the task
 * Enter an option of what about the task you would like to edit
+
 [!VIEW USERS TASKS!](task_manager.png/user-view-m-1.png)
 [!EDIT TASK!](task_manager.png/user-edit-task.png)
 
 
 * Enter 'e' to exit the program
+
 [!EXIT PROGRAM!](task_manager.png/user-exit.png)
 
 

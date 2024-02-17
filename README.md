@@ -56,9 +56,9 @@ for the Administrator.
 ## Admin
 
 * Select the triangular play button in the top right corner of the code editor to start the program
-![ADMIN LOGIN](/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-login.png)
+![ADMIN LOGIN!](task_manager.png/admin-login.png)
 * Enter your username and password
-![ADMIN_REG_USER](/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-reg-user.png)
+![ADMIN_REG_USER!](task_manager.png/admin-reg-user.png)
 * Enter 'R' to Register a new user
 * Enter a password
 * Confirm the password

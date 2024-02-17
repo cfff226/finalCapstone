@@ -56,49 +56,49 @@ for the Administrator.
 ## Admin
 
 * Select the triangular play button in the top right corner of the code editor to start the program
-/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-login.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-login.png)
 * Enter your username and password
-/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-reg-user.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-reg-user.png)
 * Enter 'R' to Register a new user
 * Enter a password
 * Confirm the password
-/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-view-m.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-view-m.png)
 * Enter 'vm' to view the Admin's tasks only
-/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-add-task.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-add-task.png)
 * Enter 'a' to add a new task
 * Enter the user whom the task is assigned to
 * Enter a task title
 * Enter a task description
 * Enter a task due date
-/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-view-all.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-view-all.png)
 * Enter 'va' to view all tasks
-/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-reports.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-reports.png)
 * Enter 'gr' to generate reports and navigate to user_overview.txt and tasks_overview.txt to view
-/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-task-report.png
-/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-user-report.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-task-report.png)
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-user-report.png)
 * Enter 'e' to exit the program
-/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-exit.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-exit.png)
 
 ## General user
 
 * Select the triangular play button in the top right corner of the code editor to start the program
-/Users/cazziefox/Desktop/Capstone/task_manager.png/user-login.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/user-login.png)
 * Enter your username and password
-/Users/cazziefox/Desktop/Capstone/task_manager.png/user-add-task.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/user-add-task.png)
 * Enter 'a' to add a new task
 * Enter the user whom the task is assigned to
 * Enter a task title
 * Enter a task description
 * Enter a task due date
-/Users/cazziefox/Desktop/Capstone/task_manager.png/user-view-all.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/user-view-all.png)
 * Enter 'va' to view all tasks
-/Users/cazziefox/Desktop/Capstone/task_manager.png/user-view-m-1.png
-/Users/cazziefox/Desktop/Capstone/task_manager.png/user-edit-task.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/user-view-m-1.png)
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/user-edit-task.png)
 * Enter 'vm' to view only the logged in users tasks
 * Enter the number of the task you wish to edit
 * Enter an option of how you would like to edit the task
 * Enter an option of what about the task you would like to edit
-/Users/cazziefox/Desktop/Capstone/task_manager.png/user-exit.png
+(/Users/cazziefox/Desktop/Capstone/task_manager.png/user-exit.png)
 * Enter 'e' to exit the program
 
 # Credits

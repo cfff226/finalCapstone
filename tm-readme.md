@@ -1,18 +1,3 @@
-Add a detailed README file for each project that you have pushed to
-GitHub. A reminder that README files should contain the following:
-○ The project name.
-○ A clear, short, and to the point description of your project. Describe
-the importance of your project, and what it does.
-○ A table of contents to allow other people to quickly navigate
-especially long or detailed READMEs.
-○ An installation section that tells other users how to install your project
-locally.
-○ A usage section that instructs others on how to use your project after
-they’ve installed it. Include screenshots of your project in action.
-○ A section for credits that highlights and links to the authors of your
-project if the project has been created by more than one person.
-
-
 # Task Manager
 
 ### A Task Management program which is to be run in a code editor terminal, developed on VScode using Python.
@@ -68,12 +53,53 @@ for the Administrator.
 
 # Usage
 
-* Select the triangular play button in the top right corner of the code editor
-* 
+## Admin
 
+* Select the triangular play button in the top right corner of the code editor to start the program
+/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-login.png
+* Enter your username and password
+/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-reg-user.png
+* Enter 'R' to Register a new user
+* Enter a password
+* Confirm the password
+/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-view-m.png
+* Enter 'vm' to view the Admin's tasks only
+/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-add-task.png
+* Enter 'a' to add a new task
+* Enter the user whom the task is assigned to
+* Enter a task title
+* Enter a task description
+* Enter a task due date
+/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-view-all.png
+* Enter 'va' to view all tasks
+/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-reports.png
+* Enter 'gr' to generate reports and navigate to user_overview.txt and tasks_overview.txt to view
+/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-task-report.png
+/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-user-report.png
+* Enter 'e' to exit the program
+/Users/cazziefox/Desktop/Capstone/task_manager.png/admin-exit.png
 
+## General user
 
-
+* Select the triangular play button in the top right corner of the code editor to start the program
+/Users/cazziefox/Desktop/Capstone/task_manager.png/user-login.png
+* Enter your username and password
+/Users/cazziefox/Desktop/Capstone/task_manager.png/user-add-task.png
+* Enter 'a' to add a new task
+* Enter the user whom the task is assigned to
+* Enter a task title
+* Enter a task description
+* Enter a task due date
+/Users/cazziefox/Desktop/Capstone/task_manager.png/user-view-all.png
+* Enter 'va' to view all tasks
+/Users/cazziefox/Desktop/Capstone/task_manager.png/user-view-m-1.png
+/Users/cazziefox/Desktop/Capstone/task_manager.png/user-edit-task.png
+* Enter 'vm' to view only the logged in users tasks
+* Enter the number of the task you wish to edit
+* Enter an option of how you would like to edit the task
+* Enter an option of what about the task you would like to edit
+/Users/cazziefox/Desktop/Capstone/task_manager.png/user-exit.png
+* Enter 'e' to exit the program
 
 # Credits
 

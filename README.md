@@ -42,7 +42,7 @@ for the Administrator.
 # Installation
 
 ### It is recommended to download a code editor such as VScode if you don't have one, although you can view this project in a browser.
-* Go to https://github.com/cfff226.
+* Go to https://github.com/cfff226/finalcapstone
 * Select the repository.
 * Navigate to the green button labeled 'Code'.
 * Select 'Download ZIP'.
@@ -120,7 +120,7 @@ for the Administrator.
 
 * Enter 'va' to view all tasks
 
-[!VIEW ALL!](task_manager.png/user-view-all.png)
+![VIEW ALL!](task_manager.png/user-view-all.png)
 
 
 * Enter 'vm' to view only the logged in users tasks
@@ -128,13 +128,13 @@ for the Administrator.
 * Enter an option of how you would like to edit the task
 * Enter an option of what about the task you would like to edit
 
-[!VIEW USERS TASKS!](task_manager.png/user-view-m-1.png)
-[!EDIT TASK!](task_manager.png/user-edit-task.png)
+![VIEW USERS TASKS!](task_manager.png/user-view-m-1.png)
+![EDIT TASK!](task_manager.png/user-edit-task.png)
 
 
 * Enter 'e' to exit the program
 
-[!EXIT PROGRAM!](task_manager.png/user-exit.png)
+![EXIT PROGRAM!](task_manager.png/user-exit.png)
 
 
 # Credits
